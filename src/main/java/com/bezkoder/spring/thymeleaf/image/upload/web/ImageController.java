@@ -1,4 +1,4 @@
-package com.bezkoder.spring.thymeleaf.image.upload.controller;
+package com.bezkoder.spring.thymeleaf.image.upload.web;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -26,7 +26,7 @@ public class ImageController {
   @Autowired
   FilesStorageService storageService;
 
-  @GetMapping("/")
+  @GetMapping("/home")
   public String homepage() {
     return "redirect:/images";
   }
